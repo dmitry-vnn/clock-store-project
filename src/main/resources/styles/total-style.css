@@ -1,0 +1,278 @@
+/*Load custom font from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap');
+
+.clock-icon-image-stack-pane {
+    -fx-opacity: 0.5;
+    -fx-background-color: #c2c2c2;
+    -fx-background-radius: 15;
+}
+
+.any-text {
+    -fx-font-size: 16;
+    -fx-font-weight: 700;
+    -fx-font-style: normal;
+}
+
+#clock-icon-mark-label {
+    -fx-padding: 0 0 0 10;
+}
+
+#clock-icon-price-label {
+    -fx-font-size: 20;
+    -fx-padding: 0 0 0 0;
+}
+
+#clock-icon-fake-price-label {
+    -fx-font-size: 18;
+    -fx-padding: 0 0 0 10;
+}
+
+#clock-icon-fake-price-label .text {
+    -fx-fill: #EB4E42;
+    -fx-font-weight: 400;
+    -fx-strikethrough: true;
+}
+
+#clock-pane {
+    /*-fx-border-width: 1;*/
+    /*-fx-border-color: red;*/
+}
+
+#clock-pane:hover {
+    -fx-background-color: white;
+    -fx-border-color: #D1D1D1;
+    -fx-border-width: 1;
+}
+
+.add-clock-icon-circle {
+    -fx-fill: #c2c2c2;
+}
+
+.add-clock-icon-rec {
+    -fx-fill: white;
+    -fx-arc-width: 10;
+    -fx-arc-height: 10;
+}
+
+.dialog-anchor {
+    -fx-font-family: 'Roboto';
+    -fx-font-weight: normal;
+    -fx-font-size: 15;
+    -fx-background-color: #F2F2F2;
+}
+
+.dialog-each-hbox {
+    -fx-alignment: center;
+    -fx-spacing: 0;
+}
+
+.dialog-text-font {
+
+    -fx-font-family: 'Consolas';
+    -fx-font-size: 14;
+}
+
+.dialog-text-field {
+
+    -fx-background-color: white;
+
+    -fx-border-color: #C4C4C4;
+    -fx-border-width: 1;
+
+    -fx-border-radius: 1;
+
+    -fx-padding: 0 5 0 5;
+
+}
+
+.dialog-text-field:focused {
+
+    -fx-border-color: #97C3F3;
+    -fx-border-width: 2;
+
+}
+
+.dialog-combo-box {
+
+    -fx-background-color: white;
+
+    -fx-border-color: #C4C4C4;
+    -fx-border-width: 1;
+
+    -fx-border-radius: 1;
+    -fx-padding: -5 0 -5 -5;
+
+}
+
+.dialog-combo-box > .list-cell {
+    -fx-text-overrun: clip;
+}
+
+.store-extension-combo-box > .list-cell {
+    -fx-text-overrun: ellipsis;
+}
+
+
+
+.dialog-check-box .box {
+
+    -fx-background-color: white;
+    -fx-border-color: #C4C4C4;
+
+    -fx-border-radius: 2;
+    -fx-border-width: 1;
+
+    -fx-padding: 0 0 0 0;
+
+}
+
+.dialog-check-box:selected .box {
+
+    -fx-background-color: #4F9EE3;
+    -fx-border-color: #4B97D9;
+}
+
+.dialog-check-box:selected .mark {
+    -fx-background-color: white;
+    -fx-shape: "M14.596,2.055L12.455,0C9.687,2.884,6.011,6.714,5.158,7.602L2.055,4.624L0,6.765l5.242,5.037l0.003-0.004 l0.003,0.004L14.596,2.055z";
+    -fx-scale-x: 0.8;
+    -fx-scale-y: 0.8;
+}
+
+.dialog-radio-button {
+}
+
+.dialog-radio-button > .radio {
+    -fx-background-color: white;
+    -fx-border-color: #C4C4C4;
+    -fx-border-radius: 50%;
+    -fx-padding: 3px;
+}
+
+
+.dialog-radio-button:selected > .radio {
+    -fx-background-color: #4F9EE3;
+    -fx-border-color: #4B97D9;
+    -fx-padding: 5px;
+}
+
+.dialog-radio-button:selected > .radio > .dot {
+    -fx-padding: 2pt;
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+}
+
+.dialog-action-buttons-hbox {
+
+    -fx-spacing: 10;
+
+}
+
+.dialog-action-button {
+
+    -fx-background-color: white;
+    -fx-border-color: #C4C4C4;
+
+    -fx-border-radius: 2;
+    -fx-border-width: 1;
+
+    -fx-min-width: 71;
+    -fx-pref-height: 29;
+    -fx-text-overrun: clip;
+
+}
+
+
+.dialog-action-button:pressed {
+
+    -fx-border-color: #97C3F3;
+    -fx-border-width: 2;
+
+}
+
+.dialog-action-button-ok {
+
+    -fx-background-color: #4D8AC9;
+    -fx-border-color: #467CB7;
+
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+
+}
+
+.dialog-action-button-remove {
+
+    -fx-background-color: #F44336;
+    -fx-border-color: #cb423e;
+
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+
+    -fx-font-size: 13;
+
+}
+
+.dialog-separator *.line {
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1 0; /* фишка в задании толщины только одному из бордюров */
+    -fx-border-color: #D1D1D1;
+}
+
+.dialog-circle-dial {
+    -fx-stroke: #21a1dc;
+    -fx-stroke-width: 2;
+}
+
+.dialog-line-dial-hour-arrow {
+    -fx-stroke: #1997cb;
+    -fx-stroke-width: 3;
+}
+
+.dialog-line-dial-minute-arrow {
+    -fx-stroke: #1997cb;
+    -fx-stroke-width: 3;
+}
+
+.dialog-line-dial-second-arrow {
+    -fx-stroke: rgb(25, 151, 203);
+    -fx-stroke-width: 3;
+}
+
+.dialog-circle-point {
+    -fx-stroke: #21a1dc;
+    -fx-fill: #21a1dc;
+}
+
+#searchTextField {
+    -fx-padding: -4 5 0 27;
+}
+
+
+#clocks-flow-pane {
+    -fx-vgap: 30;
+    -fx-hgap: 30;
+    -fx-padding: 30 30 30 50;
+}
+
+
+#store-scroll-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+#store-scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+
+#store-scroll-pane .corner {
+    -fx-background-insets: 0;
+}
+
+.store-strategy-type-label {
+    -fx-font-size: 20;
+}
+
+
+
+
+

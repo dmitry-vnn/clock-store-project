@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane prefHeight="235.0" prefWidth="538.0" stylesheets="@../styles/total-style.css" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <VBox layoutX="54.0" layoutY="72.0" prefHeight="108.0" prefWidth="176.0" spacing="7.0">
+         <children>
+            <RadioButton fx:id="fromDbRadioButton" mnemonicParsing="false" text="Из базы данных">
+               <styleClass>
+                  <String fx:value="dialog-text-font" />
+                  <String fx:value="dialog-radio-button" />
+               </styleClass>
+               <toggleGroup>
+                  <ToggleGroup fx:id="loadRadioButtonsToggleGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="fromJsonRadioButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Из JSON" toggleGroup="$loadRadioButtonsToggleGroup">
+               <styleClass>
+                  <String fx:value="dialog-text-font" />
+                  <String fx:value="dialog-radio-button" />
+               </styleClass>
+            </RadioButton>
+            <RadioButton fx:id="fromBinaryRadioButton" layoutX="10.0" layoutY="46.0" mnemonicParsing="false" text="Из бинарника" toggleGroup="$loadRadioButtonsToggleGroup">
+               <styleClass>
+                  <String fx:value="dialog-text-font" />
+                  <String fx:value="dialog-radio-button" />
+               </styleClass>
+            </RadioButton>
+            <RadioButton fx:id="customRadioButton" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" text="Кастомная" toggleGroup="$loadRadioButtonsToggleGroup">
+               <styleClass>
+                  <String fx:value="dialog-text-font" />
+                  <String fx:value="dialog-radio-button" />
+               </styleClass>
+            </RadioButton>
+         </children>
+      </VBox>
+      <VBox layoutX="283.0" layoutY="72.0" prefHeight="82.0" prefWidth="176.0" spacing="7.0">
+         <children>
+            <CheckBox fx:id="toDbCheckBox" mnemonicParsing="false" text="В базу данных">
+               <styleClass>
+                  <String fx:value="dialog-check-box" />
+                  <String fx:value="dialog-text-font" />
+               </styleClass>
+            </CheckBox>
+            <CheckBox fx:id="toJsonCheckBox" mnemonicParsing="false" text="В JSON">
+               <styleClass>
+                  <String fx:value="dialog-check-box" />
+                  <String fx:value="dialog-text-font" />
+               </styleClass>
+            </CheckBox>
+            <CheckBox fx:id="toBinaryCheckBox" mnemonicParsing="false" text="В бинарник">
+               <styleClass>
+                  <String fx:value="dialog-check-box" />
+                  <String fx:value="dialog-text-font" />
+               </styleClass>
+            </CheckBox>
+         </children>
+      </VBox>
+      <Label layoutX="54.0" layoutY="27.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="176.0" text="Загрузка данных">
+         <styleClass>
+            <String fx:value="dialog-text-font" />
+            <String fx:value="store-strategy-type-label" />
+         </styleClass>
+      </Label>
+      <Label layoutX="283.0" layoutY="27.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="195.0" text="Сохранение данных">
+         <styleClass>
+            <String fx:value="dialog-text-font" />
+            <String fx:value="store-strategy-type-label" />
+         </styleClass>
+      </Label>
+      <HBox alignment="CENTER" layoutX="89.0" layoutY="195.0" prefHeight="28.0" prefWidth="359.0" spacing="24.0">
+         <children>
+            <Button fx:id="okButton" mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="ОК">
+               <styleClass>
+                  <String fx:value="dialog-action-button" />
+                  <String fx:value="dialog-text-font" />
+                  <String fx:value="dialog-action-button-ok" />
+               </styleClass>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="155.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="Отмена">
+               <styleClass>
+                  <String fx:value="dialog-action-button" />
+                  <String fx:value="dialog-text-font" />
+               </styleClass>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="dialog-each-hbox" />
+            <String fx:value="dialog-action-buttons-hbox" />
+         </styleClass>
+      </HBox>
+      <Separator layoutX="54.0" layoutY="180.0" prefHeight="13.0" prefWidth="428.0" styleClass="dialog-separator" />
+   </children>
+</Pane>

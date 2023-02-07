@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane id="clock-pane" fx:id="rootPane" prefHeight="314.0" prefWidth="260.0" stylesheets="@../styles/total-style.css" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="243.0" prefWidth="260.0">
+         <children>
+            <ImageView id="clock-mark-icon-image-view" fx:id="iconImageView" fitHeight="243.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/clock-icons/default/accurate.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label id="clock-icon-mark-label" fx:id="markLabel" layoutY="254.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="27.0" prefWidth="260.0" styleClass="any-text" text="Часы Rolex " />
+      <Label id="clock-icon-price-label" fx:id="priceLabel" layoutX="123.0" layoutY="281.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="30.0" prefWidth="139.0" styleClass="any-text" text="5000 руб." />
+      <Label id="clock-icon-fake-price-label" fx:id="fakePriceLabel" layoutY="281.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" styleClass="any-text" text="6780 руб." />
+   </children>
+</Pane>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="575.0" styleClass="dialog-anchor" stylesheets="@../styles/total-style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fill="WHITE" layoutX="108.0" layoutY="127.0" radius="85.0" stroke="BLACK" strokeType="INSIDE" styleClass="dialog-circle-dial" />
+      <Line endX="8.0" endY="25.0" layoutX="142.0" layoutY="142.0" startX="-33.0" startY="-20.0" styleClass="dialog-line-dial-hour-arrow" />
+      <Line endX="-23.0" endY="31.0" layoutX="132.0" layoutY="132.0" startX="-23.0" startY="-10.0" styleClass="dialog-line-dial-minute-arrow" />
+      <Line endX="26.0" layoutX="122.0" layoutY="122.0" startX="-13.0" styleClass="dialog-line-dial-second-arrow" />
+      <HBox layoutX="253.0" layoutY="36.0" prefHeight="28.0" prefWidth="322.0" spacing="24.0" styleClass="dialog-each-hbox">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="228.0" styleClass="dialog-text-font" text="Марка:" />
+            <Label layoutX="148.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="325.0" styleClass="dialog-text-font" text="Rolex" />
+         </children>
+      </HBox>
+      <HBox layoutX="253.0" layoutY="64.0" prefHeight="28.0" prefWidth="322.0" spacing="24.0" styleClass="dialog-each-hbox">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="246.0" styleClass="dialog-text-font" text="Цена:" />
+            <Label layoutX="139.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="343.0" styleClass="dialog-text-font" text="1506 ₽" />
+         </children>
+      </HBox>
+      <CheckBox layoutX="254.0" layoutY="127.0" mnemonicParsing="false" text="Синхронизировать с системой">
+         <styleClass>
+            <String fx:value="dialog-check-box" />
+            <String fx:value="dialog-text-font" />
+         </styleClass>
+      </CheckBox>
+      <CheckBox layoutX="254.0" layoutY="154.0" mnemonicParsing="false" text="Перевести в начало">
+         <styleClass>
+            <String fx:value="dialog-check-box" />
+            <String fx:value="dialog-text-font" />
+         </styleClass>
+      </CheckBox>
+      <HBox layoutX="232.0" layoutY="182.0" prefHeight="28.0" prefWidth="272.0" spacing="24.0" styleClass="dialog-each-hbox">
+         <children>
+            <ComboBox minHeight="-Infinity" prefHeight="22.0" prefWidth="70.0" promptText="06">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="dialog-combo-box" />
+                  <String fx:value="dialog-text-font" />
+               </styleClass>
+            </ComboBox>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="7.0" styleClass="dialog-text-font" text=":" />
+            <ComboBox minHeight="-Infinity" prefHeight="22.0" prefWidth="70.0" promptText="21">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="dialog-combo-box" />
+                  <String fx:value="dialog-text-font" />
+               </styleClass>
+            </ComboBox>
+            <Label layoutX="151.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="7.0" styleClass="dialog-text-font" text=":" />
+            <ComboBox minHeight="-Infinity" prefHeight="22.0" prefWidth="70.0" promptText="49">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="dialog-combo-box" />
+                  <String fx:value="dialog-text-font" />
+               </styleClass>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="108.0" layoutY="254.0" prefHeight="28.0" prefWidth="359.0" spacing="24.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" text="ОК">
+               <styleClass>
+                  <String fx:value="dialog-action-button" />
+                  <String fx:value="dialog-text-font" />
+                  <String fx:value="dialog-action-button-ok" />
+               </styleClass>
+            </Button>
+            <Button layoutX="114.0" layoutY="10.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="76.0" text="Удалить">
+               <styleClass>
+                  <String fx:value="dialog-action-button" />
+                  <String fx:value="dialog-text-font" />
+                  <String fx:value="dialog-action-button-ok" />
+                  <String fx:value="dialog-action-button-remove" />
+               </styleClass>
+            </Button>
+            <Button layoutX="155.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="Отмена">
+               <styleClass>
+                  <String fx:value="dialog-action-button" />
+                  <String fx:value="dialog-text-font" />
+               </styleClass>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="dialog-each-hbox" />
+            <String fx:value="dialog-action-buttons-hbox" />
+         </styleClass>
+      </HBox>
+      <Separator layoutX="253.0" layoutY="99.0" prefHeight="13.0" prefWidth="229.0" styleClass="dialog-separator" />
+      <Circle layoutX="110.0" layoutY="123.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" styleClass="dialog-circle-point" />
+   </children>
+</AnchorPane>

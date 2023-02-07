@@ -1,0 +1,37 @@
+{
+    "clocks": [
+        {
+            "startSeconds": 9,
+            "id": 5,
+            "startHours": 2,
+            "startMinutes": 5,
+            "mark": "Adidas",
+            "price": 10456,
+            "className": "dmitry.clock.logic.clocks.AccurateClock"
+        },
+        {
+            "id": 3,
+            "startHours": 1,
+            "startMinutes": 27,
+            "mark": "Versace",
+            "price": 52456,
+            "className": "dmitry.clock.logic.clocks.StandardClock"
+        },
+        {
+            "id": 4,
+            "startHours": 1,
+            "startMinutes": 46,
+            "mark": "Casio",
+            "price": 4566,
+            "className": "dmitry.clock.logic.clocks.StandardClock"
+        },
+        {
+            "id": 1,
+            "startHours": 21,
+            "startMinutes": 25,
+            "mark": "Rolex",
+            "price": 63453,
+            "className": "dmitry.clock.logic.clocks.StandardClock"
+        }
+    ]
+}
